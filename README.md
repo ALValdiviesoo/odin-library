@@ -1,1 +1,1 @@
-# odin-library
+This is the library project for TOP. This project focuses on JS objects.
