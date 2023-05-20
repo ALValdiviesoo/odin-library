@@ -16,11 +16,32 @@
     <nav class="navbar">
       <p>My Library</p>
 
-      <button class="addBook">&plus; Add Book</button>
+      <button class="addBook" onclick="openPopup()">&plus; Add Book</button>
     </nav>
 
     <main>
+      <div class="popup">
+        <p class="popupTitle">ADD YOUR BOOK</p>
+        <form>
 
+          <div class="inputRow">
+              <input type="text" name="title" id="title" placeholder="Title">
+          </div>
+
+          <div class="inputRow">
+            <input type="text" name="author" id="author" placeholder="Author">
+          </div>
+
+          <div class="inputRow">
+            <input type="text" name="pages" id="pages" placeholder="Pages">
+          </div>
+
+          <div class="inputRow">
+            <button class="submitBtn" onclick="closePopup()">ADD &plus;</button>
+          </div>
+
+        </form>
+      </div>
     </main>
   </div>
 

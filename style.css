@@ -39,16 +39,64 @@ body {
 .addBook {
   text-align: center;
   margin-right: 25px;
-  padding: 5px 50px;
+  padding: 7px 50px;
   font-size: 20px;
   color: var(--blackColor);
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 main {
   width: 100%;
   height: 92vh;
   background-color: var(--whiteColor);
+}
+
+.popup {
+  top: 0;
+  left: 50%;
+  background-color: var(--blackColor);
+  width: 20%;
+  height: auto;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  color: var(--whiteColor);
+  font-size: 25px;
+  visibility: hidden;
+  transition: transform 0.25s, top 0.25s;
+}
+
+.openPopup {
+  top: 50%;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.inputRow {
+  display: grid;
+  place-content: center;
+  margin: 10px 10px;
+  height: 8%;
+}
+
+.submitBtn {
+  font-weight: bold;
+  padding: 10px 40px;
+  margin: 10px 10px;
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
+  border: 1px solid var(--blackColor);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input {
+  font-size: 15px;
+  color: var(--blackColor);
 }
